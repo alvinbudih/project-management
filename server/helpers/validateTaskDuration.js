@@ -16,6 +16,6 @@ module.exports = async function validateTaskDuration(projectId, startTime, endTi
       return false;
     }
 
-    return (startTime > taskStartTime && startTime < taskEndTime) || (endTime > taskStartTime && endTime < taskEndTime);
+    return (startTime >= taskStartTime && startTime <= taskEndTime) || (endTime >= taskStartTime && endTime <= taskEndTime);
   })
 }
