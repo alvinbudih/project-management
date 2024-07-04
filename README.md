@@ -8,7 +8,7 @@ Go to the server directory
 cd server
 ```
 
-Copy .env.example to .env
+Copy .env.example to .env (You may create new database and set database url into .env file or you can use my database url from atlas and let DATABASE_URL from .env empty)
 
 ```bash
 cp .env.example .env
